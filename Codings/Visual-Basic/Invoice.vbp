@@ -1,0 +1,61 @@
+' INVOICE REPORT USING DATA BOUND CONTROL
+
+Private Sub cmdAdd_Click()
+Data1.Recordset.AddNew
+MsgBox " enter new record"
+cmdEdit.Enabled = False
+cmdDelete.Enabled = False
+cmdEnd.Enabled = False
+cmdSave.Enabled = True
+End Sub
+----------------------------------------------------------------------------------------------------------------
+
+Private Sub cmdCount_Click()
+MsgBox "total records  =" & Data1.Recordset.RecordCount
+End Sub
+----------------------------------------------------------------------------------------------------------------
+
+Private Sub cmdDelete_Click()
+Data1.Recordset.delete
+If Not Data1.Recordset.EOF Then
+Data1.Recordset.MoveLast
+Else
+Data1.Recordset.MoveLast
+End If
+MsgBox " one record deleted"
+End Sub
+----------------------------------------------------------------------------------------------------------------
+
+Private Sub cmdEdit_Click()
+Data1.Recordset.edit
+cmdAdd.Enabled = False
+cmdDelete.Enabled = False
+cmdEnd.Enabled = False
+cmdSave.Enabled = True
+End Sub
+----------------------------------------------------------------------------------------------------------------
+
+Private Sub cmdEnd_Click()
+End
+End Sub
+----------------------------------------------------------------------------------------------------------------
+Private Sub Form_Load()
+Me.WindowState = 2
+Data1.Refresh
+cmdSave.Enabled = False
+End Sub
+----------------------------------------------------------------------------------------------------------------
+Private Sub cmdSave_Click()
+Data1.Recordset.Update
+Data1.Refresh
+If cmdEdit.Enabled = False Then
+MsgBox " New Record added successfully"
+Else
+MsgBox " record has been updated"
+End If
+cmdEdit.Enabled = True
+cmdDelete.Enabled = True
+cmdEnd.Enabled = True
+cmdSave.Enabled = True
+End Sub
+----------------------------------------------------------------------------------------------------------------
