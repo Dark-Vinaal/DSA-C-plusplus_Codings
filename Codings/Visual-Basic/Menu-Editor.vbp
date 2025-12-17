@@ -1,0 +1,36 @@
+' MENU EDITOR
+
+Private Sub mnuBlue_Click()
+menu.BackColor = vbBlue
+mnuBlue.Enabled = False
+mnuRed.Enabled = True
+mnuGreen.Enabled = True
+End Sub
+----------------------------------------------------------------------------------------------------------------
+
+Private Sub mnuEnd_Click()
+End
+End Sub
+----------------------------------------------------------------------------------------------------------------
+Private Sub mnuGreen_Click()
+menu.BackColor = vbGreen
+mnuGreen.Enabled = False
+mnuRed.Enabled = True
+mnuBlue.Enabled = True
+End Sub
+----------------------------------------------------------------------------------------------------------------
+Private Sub mnuMax_Click()
+Me.WindowState = 2
+End Sub
+----------------------------------------------------------------------------------------------------------------
+Private Sub mnuMin_Click()
+Me.WindowState = 0
+End Sub
+----------------------------------------------------------------------------------------------------------------
+Private Sub mnuRed_Click()
+menu.BackColor = vbRed
+mnuRed.Enabled = False
+mnuGreen.Enabled = True
+mnuBlue.Enabled = True
+End Sub
+---------------------------------------------------------------------------------------------------------------------
