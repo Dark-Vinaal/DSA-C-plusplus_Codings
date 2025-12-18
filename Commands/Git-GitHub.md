@@ -115,6 +115,22 @@ git pull origin branch-name
 
 ---
 
+### 📌 `git pull --allow-unrelated-histories`
+
+**Purpose:** Fetches changes from the remote and merges them into your current branch.
+
+- The `--allow-unrelated-histories` flag in Git forces the `git merge` or `git pull` command to combine two branches that do not share a common commit history. By default, Git prevents merging histories that it sees as completely separate to avoid potential errors and confusion
+
+> **Note:** This is essentially `git fetch` + `git merge`.
+
+```bash
+git pull origin <branch-name> --allow-unrelated-histories
+```
+
+> **Note:** Branch name can be either <main> or <master> most commonly.. If not then add you desired branch name.
+
+---
+
 ## 🌿 3. Branching & Merging
 
 Used for working on features or bug fixes without breaking the main code.
