@@ -1,4 +1,4 @@
-## 🤖 Module 06: Robotics & Physical AI
+## 🤖 Robotics & Physical AI
 
 Robotics is where AI gains a **Physical Embodiment**. We are currently in the era of **Physical AI**, where robots learn through experience rather than rigid programming.
 
