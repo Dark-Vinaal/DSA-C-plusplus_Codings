@@ -6,16 +6,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-1. [Introduction to AI](#introduction-to-ai) 
-2. [Key Features of Modern AI](#key-features-of-modern-ai)
-3. [Scope Across Industries](#scope-across-industries)
-4. [The Future of AI (2025-2030)](#the-future-of-ai)
-5. [Learning Roadmap](#learning-roadmap)
-
----
-
 ## 🌟 Introduction to AI
 
 - **Artificial Intelligence** is the simulation of human intelligence processes by computer systems. In 2025, the definition has evolved from simple "pattern matching" to **Agentic Systems**—machines that don't just respond to prompts but anticipate needs and execute multi-step workflows autonomously.
